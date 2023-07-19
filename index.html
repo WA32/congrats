@@ -208,7 +208,7 @@
   <script> var audio = document.querySelector(".audio"); if (musik) { audio.src = musik; }
     function mulai() { audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () { document.querySelector(".open").style.display = "none"; }, 1000); }
     function wa(isi) { window.open("https://api.whatsapp.com/send?text= haii " + isi); }
-    async function tanya() { var { value: kado } = await swal.fire({ title: "Free di hari apa rimm, ketemu yuuk?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("Kirim ke WA jawabannyaaa"); wa(kado); } else { await swal.fire("Jangan dikosongin dong"); tanya(); } }
+    async function tanya() { var { value: kado } = await swal.fire({ title: "Free di hari apa rimm, ketemu yuuk?", input: "text", showCancelButton: false, }); if (kado) { await swal.fire("Lanjut ke WA jawabannyaaa"); wa(kado); } else { await swal.fire("Jangan dikosongin dong"); tanya(); } }
   </script>
 </body>
 
